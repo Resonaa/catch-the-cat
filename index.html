@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>原始围猫 - 双线108服</title>
+
+    <script src="static/phaser.min.js"></script>
+    <script src="static/catch-the-cat.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      #catch-the-cat {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="catch-the-cat"></div>
+
+    <script>
+      const w = 15,
+        h = 15,
+        r = 17,
+        wallDensity = 0.03;
+
+      new CatchTheCatGame({
+        w,
+        h,
+        r,
+        initialWallCount: w * h * wallDensity,
+        backgroundColor: 0xffffff,
+        parent: "catch-the-cat",
+        statusBarAlign: "center",
+        credit: "XDE Web",
+      });
+    </script>
+  </body>
+</html>
