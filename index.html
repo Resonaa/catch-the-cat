@@ -35,16 +35,15 @@
     <script>
       if (location.host === "xde-catch-the-cat.pages.dev") location.href = "https://cat.161.moe";
 
-      const w = 15,
-        h = 15,
-        r = 17,
-        wallDensity = 0.03;
+      const w = 13,
+        h = 13,
+        r = 19;
 
       new CatchTheCatGame({
         w,
         h,
         r,
-        initialWallCount: w * h * wallDensity,
+        initialWallCount: 4,
         backgroundColor: 0xffffff,
         parent: "catch-the-cat",
         statusBarAlign: "center",
