@@ -49,6 +49,13 @@
         statusBarAlign: "center",
         credit: "XDE爱猫社 荣誉出品",
       });
+
+      delete window.CatchTheCatGame;
+
+      document.addEventListener("contextmenu", e => {
+        e.preventDefault();
+        return false;
+      });
     </script>
   </body>
 </html>
